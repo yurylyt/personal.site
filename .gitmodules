@@ -1,3 +1,6 @@
 [submodule "themes/hugo-lodi-theme"]
 	path = themes/hugo-lodi-theme
 	url = https://github.com/xaviablaza/hugo-lodi-theme.git
+[submodule "themes/hugo-initio"]
+	path = themes/hugo-initio
+	url = git@github.com:miguelsimoni/hugo-initio.git
