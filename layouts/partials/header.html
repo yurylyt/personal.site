@@ -1,0 +1,39 @@
+{{ "<!-- Header -->" | safeHTML }}
+<header id="header">
+    {{ if not .Site.Params.avatar.hide }}
+    <a href="{{ .Site.BaseURL }}" class="image avatar"><img
+            src="{{ .Site.BaseURL }}images/{{ .Site.Params.sidebar.avatar }}" alt=""/></a>
+    {{ end }}
+    {{ with .Site.Params.sidebar.bio }}
+    <h1>{{ . | markdownify }}</h1>
+    {{ end }}
+
+    <ul class="icons">
+        <li><a href="https://www.scrumalliance.org/community/profile/ilytvynenk" target="_blank" class="icon">
+            <img src="/images/seal-csm.png" class="seal"/>
+        </a>
+        </li>
+        <li><a href="https://www.scrumalliance.org/community/profile/ilytvynenk" target="_blank" class="icon">
+            <img src="/images/seal-csp-sm.png" class="seal"/>
+        </a>
+        </li>
+        <li><a href="https://www.scrumalliance.org/community/profile/ilytvynenk" target="_blank" class="icon">
+            <img src="/images/seal-csp-po.png" class="seal"/>
+        </a>
+        </li>
+        <li><a href="https://edu.leankanban.com/user/13228/8/qualification-certificate" target="_blank" class="icon">
+            <img src="/images/badge-KMP-EDU.png" class="seal"/>
+        </a>
+        </li>
+
+    </ul>
+    {{ with .Site.Menus.main }}
+    <nav id="sidebar">
+        <ul>
+            {{ range . }}
+            <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+            {{ end }}
+        </ul>
+    </nav>
+    {{ end }}
+</header>
