@@ -107,6 +107,6 @@ paginate = 10
 #	weight = 10
 
 [[menu.main]]
-	name = "Blog"
+	name = "Блог"
 	url  = "https://medium.com/@yurylytvynenko"
 	weight = 0
