@@ -1,5 +1,5 @@
 [[redirects]]
 from = "/family-calendar/*"
-to = "https://tranquil-empanada-fd0b27.netlify.app/:splat"
+to = "https://family-calendar-fd0b27.netlify.app/:splat"
 status = 200
 force = true
